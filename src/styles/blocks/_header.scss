@@ -1,3 +1,9 @@
+.inner {
+  background-image: url('./images/main_bg.png');
+  background-position: top center;
+  overflow-x: hidden;
+}
+
 .header {
   padding-block: 40px;
 
@@ -48,6 +54,7 @@
   // .header__menu-link
 
   &__menu-link {
+    @include fluid-text(18, 16);
 
     position: relative;
     display: inline-flex;
