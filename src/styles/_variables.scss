@@ -1,3 +1,24 @@
 :root {
+  --color-dark: #191411;
+  
+  --color-light: #fff;
+  --color-accent: #d3320f;
+  --color-accent-gradient: 135deg, #da8023 0%, #e2b438 100%;
 
+  --border: 1px solid var(--color-light);
+  --border-radius: 8px;
+  --border-radius-small: 5px;
+  --border-radius-large: 100px;
+
+  --shadow: 0 5px 0 0 var(--color-dark);
+
+  --font-family-base: 'Gilroy', sans-serif;
+  --font-family-alt: 'Merriweather', sans-serif;
+  
+  --container-width: 1200px;
+  --container-padding-x: 20px;
+
+  --button-heigth: 68px;
+
+  --transition-duration: 0.2s; 
 }
