@@ -25,52 +25,81 @@
 </head>
 <body>
 
-  <header class="header">
-    <div class="header__inner container">
-      <a class="header__logo">
-        <img
-          src="./images/logo.svg"
-          alt="Burger cheddar logo"
-          class="header__logo-image"
-          width="156"
-          height="50"
-          loading="lazy"
-        />
-      </a>
-      <nav class="header__menu hidden-mobile">
-        <ul class="header__menu-list">
-          <li class="header__menu-item">
-            <a 
-              class="header__menu-link"
-              href="/"
-            >
-              Почему у нас
-            </a>
-          </li>
-          <li class="header__menu-item">
-            <a 
-              class="header__menu-link"
-              href="/"
-            >
-              Почему у нас
-            </a>
-          </li>
-          <li class="header__menu-item">
-            <a 
-              class="header__menu-link"
-              href="/"
-            >
-              Оформление заказа
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="currency" title="Изменить валюту">$</div>
-    </div>
-  </header>
+  <section class="inner">
+    <header class="header">
+      <div class="header__inner container">
+        <a class="header__logo">
+          <img
+            src="./images/logo.svg"
+            alt="Burger cheddar logo"
+            class="header__logo-image"
+            width="156"
+            height="50"
+            loading="lazy"
+          />
+        </a>
+        <nav class="header__menu hidden-mobile">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a 
+                class="header__menu-link"
+                href="/"
+              >
+                Почему у нас
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a 
+                class="header__menu-link"
+                href="/"
+              >
+                Почему у нас
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a 
+                class="header__menu-link"
+                href="/"
+              >
+                Оформление заказа
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="currency" title="Изменить валюту">$</div>
+      </div>
+    </header>
 
-  <main class="main"></main>
-
+    <main class="content">
+      <section class="container section">
+        <div class="hero">
+          <div class="hero__body">
+            <span class="hero__small-info">
+              Новое меню
+            </span>
+            <h1 class="hero__title">
+              бургер чеддер
+            </h1>
+            <div class="hero__description">
+              <p>
+                Мы обновили наше меню, спешите попробовать сезонные новинки и насладиться отличным вкусом наших бургеров. Готовим для вас лучшие бургеры в городе из отборной мраморной говядины.
+              </p>
+            </div>
+            <button class="button hero__button">Смотреть меню</button>
+          </div>
+          <img
+            src="./images/burger-bg.png"
+            alt=""
+            class="hero__img"
+            width="1286"
+            height="980"
+            loading="lazy"
+          />
+        </div>
+      </section>
+    </main>
+  </section>
+  
   <footer class="footer"></footer>
 </body>
 </html>
