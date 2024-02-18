@@ -30,13 +30,13 @@ function copyJs() {
 
 function scss() {
   const plugins = [
-    autoprefixer(),
-    cssnano()
+    autoprefixer()
+    // cssnano()
   ];
   return gulp.src('src/styles/**/*.scss')
     .pipe(sass())
     .pipe(mergeCss())
-    .pipe(concat('style-min.css'))
+    // .pipe(concat('style-min.css'))
     .pipe(postcss(plugins))
     .pipe(gulp.dest('docs/'))
     .pipe(browserSync.reload({stream: true}));
@@ -51,15 +51,15 @@ function html() {
 	  sortClassName: true,
 	  useShortDoctype: true,
 	  collapseWhitespace: true,
-		minifyCSS: true,
+		// minifyCSS: true,
 		keepClosingSlash: true
 	};
   return gulp.src('src/**/*.html')
     .pipe(plumber())
-    .on('data', function(file) {
-      const buferFile = Buffer.from(htmlMinify.minify(file.contents.toString(), options))
-      return file.contents = buferFile
-    })
+    // .on('data', function(file) {
+    //   const buferFile = Buffer.from(htmlMinify.minify(file.contents.toString(), options))
+    //   return file.contents = buferFile
+    // })
     .pipe(gulp.dest('docs/'))
     .pipe(browserSync.reload({stream: true}));
 }
