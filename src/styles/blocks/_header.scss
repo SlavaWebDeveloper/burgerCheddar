@@ -1,7 +1,8 @@
 .inner {
   background-image: url('./images/main_bg.png');
   background-position: top center;
-  overflow-x: hidden;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .header {

@@ -35,6 +35,8 @@
   // .hero__description
 
   &__description {
+    @include fluid-text(24, 16);
+    
     line-height: 29px;
 
     &:not(:last-child) {

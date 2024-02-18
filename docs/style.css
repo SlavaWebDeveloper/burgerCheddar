@@ -145,7 +145,7 @@ svg * {
 }
 
 .section {
-	padding-block: var(--section-padding-y);
+	padding-block: 103px 193px;
 }
 
 body {
@@ -203,7 +203,8 @@ h4 {
 .inner {
 	background-image: url("./images/main_bg.png");
 	background-position: top center;
-	overflow-x: hidden;
+	background-size: cover;
+	overflow: hidden;
 }
 
 .header {
@@ -306,6 +307,7 @@ h4 {
 }
 
 .hero__description {
+	font-size: clamp(16px, 24 / 1440 * 100vw, 24px);
 	line-height: 29px;
 }
 
