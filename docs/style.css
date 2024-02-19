@@ -598,6 +598,23 @@ h4 {
 	width: 100%;
 }
 
+.footer__inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding-block: 60px;
+}
+
+.footer__rights {
+	font-size: clamp(14px, 16 / 1440 * 100vw, 16px);
+}
+
 @media (prefers-reduced-motion: reduce) {
 
 * {

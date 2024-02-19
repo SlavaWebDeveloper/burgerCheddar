@@ -1,0 +1,22 @@
+.footer {
+
+  // .footer__inner
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 60px;
+  }
+
+  // .footer__logo-image
+
+  &__logo-image {
+  }
+
+  // .footer__rights
+
+  &__rights {
+    @include fluid-text(16, 14);
+  }
+}
