@@ -478,6 +478,10 @@ h4 {
 	text-align: center;
 }
 
+.products__list:not(:last-child) {
+	margin-bottom: 24px;
+}
+
 .product-card {
 	--productCardOffsetY: 24px;
 	border: var(--border);

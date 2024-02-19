@@ -3,6 +3,9 @@
   // .products__list
 
   &__list {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
   }
 
   // .products__item
