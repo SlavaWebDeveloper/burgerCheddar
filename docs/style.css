@@ -119,7 +119,7 @@ svg * {
 	--font-family-alt: "Merriweather", sans-serif;
 	--container-width: 1200px;
 	--container-padding-x: 20px;
-	--section-padding-y: 103px;
+	--section-padding-y: 180px;
 	--button-heigth: 68px;
 	--transition-duration: 0.2s;
 }
@@ -145,7 +145,11 @@ svg * {
 }
 
 .section {
-	padding-block: 103px 193px;
+	padding-bottom: var(--section-padding-y);
+}
+
+.section-hero {
+	padding-bottom: 0;
 }
 
 body {
@@ -177,6 +181,57 @@ h2,
 h3,
 h4 {
 	font-weight: 500;
+}
+
+.grid {
+	--gridColumns: 1;
+	display: grid;
+	grid-template-columns: repeat(var(--gridColumns), 1fr);
+	gap: 24px;
+}
+
+.grid--2 {
+	--gridColumns: 2;
+}
+
+.grid--3 {
+	--gridColumns: 3;
+}
+
+.grid--4 {
+	--gridColumns: 4;
+}
+
+.grid--5 {
+	--gridColumns: 5;
+}
+
+.grid--6 {
+	--gridColumns: 6;
+}
+
+.grid--7 {
+	--gridColumns: 7;
+}
+
+.grid--8 {
+	--gridColumns: 8;
+}
+
+.grid--9 {
+	--gridColumns: 9;
+}
+
+.grid--10 {
+	--gridColumns: 10;
+}
+
+.grid--11 {
+	--gridColumns: 11;
+}
+
+.grid--12 {
+	--gridColumns: 12;
 }
 
 .button {
@@ -280,6 +335,7 @@ h4 {
 
 .hero {
 	position: relative;
+	padding-block: 103px 193px;
 }
 
 .hero__body {
