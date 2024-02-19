@@ -1,0 +1,25 @@
+.field {
+  display: flex;
+  flex-direction: column;
+
+  // .field__label
+
+  &__label {
+  }
+
+  // .field__input
+
+  &__input {
+    border: solid 1px transparent;
+    border-radius: 6px;
+    background-image: linear-gradient(var(--color-product-cards),var(--color-product-cards)), 
+                    var(--color-gradient-left-to-rigth);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 10px;
+  }  
+}

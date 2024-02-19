@@ -1,0 +1,56 @@
+.contact-us {
+  --contactUsOffsetY: 20px;
+
+  position: relative;
+
+  // .contact-us__images 
+  
+  &__images {
+    position: absolute;
+    top: -152px;
+    right: calc(100% - 764px);
+    z-index: 2;
+  }
+
+  // .contact-us__form
+
+  &__form {
+    max-width: 424px;
+    width: 100%;
+    margin-right: 102px;
+    margin-left: auto;
+  
+    border: var(--border);
+    border-radius: calc(var(--border-radius) * 2);
+    padding: 60px 40px;
+    background-color: var(--color-product-cards);
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--contactUsOffsetY);
+  }
+
+  // .contact-us__field
+
+  &__field {
+    row-gap: var(--contactUsOffsetY);
+  }
+
+  // .contact-us__title
+
+  &__title {
+    @include fluid-text(24, 16);
+
+    line-height: 29px;
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: calc(var(--contactUsOffsetY) * 2);
+    }
+  }
+
+  // .contact-us__button
+
+  &__button {
+    width: 100%;
+  }
+}
