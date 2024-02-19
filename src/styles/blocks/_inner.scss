@@ -1,0 +1,10 @@
+.inner {
+  background-image: url('./images/main_bg.png');
+  background-position: top center;
+  background-size: initial;
+  overflow: hidden;
+
+  &-why {
+    background-image: url('./images/whybg.png')
+  }
+}

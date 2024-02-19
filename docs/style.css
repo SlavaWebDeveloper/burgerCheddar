@@ -144,19 +144,11 @@ svg * {
 	overflow: hidden !important;
 }
 
-.section {
-	padding-bottom: var(--section-padding-y);
-}
-
-.section-hero {
-	padding-bottom: 0;
-}
-
 body {
 	font-size: clamp(16px, 18 / 1440 * 100vw, 18px);
 	font-family: var(--font-family-base);
 	font-weight: 400;
-	line-height: 1.28;
+	line-height: 1.5;
 	color: var(--color-light);
 	background-color: var(--color-dark);
 }
@@ -181,6 +173,28 @@ h2,
 h3,
 h4 {
 	font-weight: 500;
+}
+
+.section {
+	padding-bottom: var(--section-padding-y);
+}
+
+.section__header {
+	margin-bottom: 60px;
+}
+
+.section__title {
+	text-align: center;
+	font-size: 64px;
+	line-height: 80px;
+	font-weight: 900;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	font-family: var(--font-family-alt);
+}
+
+.section-hero {
+	padding-bottom: 0;
 }
 
 .grid {
@@ -258,8 +272,12 @@ h4 {
 .inner {
 	background-image: url("./images/main_bg.png");
 	background-position: top center;
-	background-size: cover;
+	background-size: initial;
 	overflow: hidden;
+}
+
+.inner-why {
+	background-image: url("./images/whybg.png");
 }
 
 .header {
@@ -368,13 +386,51 @@ h4 {
 }
 
 .hero__description:not(:last-child) {
-	margin-bottom: 52px;
+	margin-bottom: 56px;
 }
 
 .hero__img {
 	position: absolute;
-	top: -123px;
-	left: calc(100% - 991px);
+	top: -32px;
+	left: calc(100% - 947px);
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+
+.why {
+	max-width: 1136px;
+	margin-inline: auto;
+}
+
+.why__list {
+	gap: 100px;
+}
+
+.why-card {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	gap: 24px;
+}
+
+.why-card__title {
+	font-size: clamp(18px, 24 / 1440 * 100vw, 24px);
+	font-family: var(--font-family);
+	font-weight: 600;
+	text-align: center;
+}
+
+.why-card__body {
+	font-size: clamp(14px, 16 / 1440 * 100vw, 16px);
+	line-height: 1.4;
+	text-align: center;
 }
 
 @media (prefers-reduced-motion: reduce) {
