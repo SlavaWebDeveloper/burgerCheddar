@@ -1,10 +1,18 @@
 .inner {
-  background-image: url('./images/main_bg.png');
   background-position: top center;
+  background-repeat: no-repeat;
   background-size: initial;
   overflow: hidden;
 
+  &-hero {
+    background-image: url('./images/main_bg.png');
+  }
+
   &-why {
     background-image: url('./images/whybg.png')
+  }
+
+  &-burger {
+    background-image: url('./images/burgers_bg.png');
   }
 }
