@@ -1,0 +1,30 @@
+.section {
+  padding-bottom: var(--section-padding-y);
+
+  // .section__header
+
+  &__header {
+    margin-bottom: 60px;
+  }
+
+  // .section__title
+
+  &__title {
+    text-align: center;
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: 900;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-family: var(--font-family-alt);
+  }
+
+  // .section__body
+
+  &__body {
+  }
+
+  &-hero {
+    padding-bottom: 0;
+  }
+}

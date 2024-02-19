@@ -41,7 +41,7 @@
     line-height: 29px;
 
     &:not(:last-child) {
-      margin-bottom: 52px;
+      margin-bottom: 56px;
     }
   }
 
@@ -54,7 +54,8 @@
 
   &__img {
     position: absolute;
-    top: -123px;
-    left: calc(100% - 991px);
+    top: -32px;
+    left: calc(100% - 947px);
+    object-fit: cover;
   }
 }
