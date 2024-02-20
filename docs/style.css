@@ -325,6 +325,12 @@ h4 {
 	padding: 16px 10px;
 }
 
+.field .error {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-product-cards)), to(var(--color-product-cards))), -webkit-gradient(linear, left top, left bottom, from(red), to(red));
+	background-image: -o-linear-gradient(var(--color-product-cards), var(--color-product-cards)), -o-linear-gradient(red, red);
+	background-image: linear-gradient(var(--color-product-cards), var(--color-product-cards)), linear-gradient(red, red);
+}
+
 .header {
 	padding-block: 40px;
 }
@@ -496,6 +502,9 @@ h4 {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	gap: var(--productCardOffsetY);
 }
 

@@ -25,8 +25,16 @@ function copyFonts() {
 
 function copyJs() {
   return gulp.src('src/scripts/*')
-    .pipe(gulp.dest('./scripts/'));
-}
+    .pipe(gulp.dest('./docs/scripts/'))
+    .pipe(browserSync.reload({stream: true}));
+} 
+
+// function scripts() {
+//   return gulp.src('src/scripts/*')
+//     .pipe(gulp.dest('./docs/scripts/'))
+//     .pipe(sourcemaps.init())
+//     .pipe(browserSync.reload({stream: true}));
+// }
 
 function scss() {
   const plugins = [
@@ -77,6 +85,7 @@ function clean() {
 function watchFiles() {
   gulp.watch(['src/**/*.html'], html);
   gulp.watch(['src/styles/**/*.scss'], scss);
+  gulp.watch(['src/scripts/**.js'], copyJs);
   gulp.watch(['src/**/*.{jpg,png,svg,gif,ico,webp,avif}'], images);
 }
 
