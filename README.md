@@ -25,6 +25,7 @@ Documentation is described for each script. For example (scroll.js):
 git clone  
 https://github.com/SlavaWebDeveloper/burgerCheddar.git
 
+npm install  
 `npm install`
 
 For local development, use:
