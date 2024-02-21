@@ -712,7 +712,7 @@ h4 {
 body {
 	background-image: url(./images/burgers_bg.png);
 	background-position: center;
-	background-size: auto;
+	background-size: contain;
 }
 
 .hero__img {
