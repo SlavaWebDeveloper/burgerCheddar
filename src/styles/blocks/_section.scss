@@ -1,22 +1,35 @@
 .section {
   padding-bottom: var(--section-padding-y);
 
+  @include mobile {
+    --section-padding-y: 90px;
+  }
+
   // .section__header
 
   &__header {
     margin-bottom: 60px;
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
   }
 
   // .section__title
 
   &__title {
+    @include fluid-text(64, 30);
+
     text-align: center;
-    font-size: 64px;
     line-height: 80px;
     font-weight: 900;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     font-family: var(--font-family-alt);
+
+    @include mobile {
+      line-height: 40px;
+    }
   }
 
   // .section__body

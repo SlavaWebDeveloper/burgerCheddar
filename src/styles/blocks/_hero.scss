@@ -1,9 +1,16 @@
 .hero {
   position: relative;
   padding-block: 103px 193px;
+
+  @include mobile {
+    padding-block: 60px;
+  }
+
   // .hero__body
 
   &__body {
+    position: relative;
+    z-index: 2;
     max-width: 608px;
   }
 
@@ -57,5 +64,13 @@
     top: -32px;
     left: calc(100% - 947px);
     object-fit: cover;
+
+    @include desktop {
+      left: calc(100% - 700px);
+    }
+
+    @include tablet {
+      display: none;
+    }
   }
 }

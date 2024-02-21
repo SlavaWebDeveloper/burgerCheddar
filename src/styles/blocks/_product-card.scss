@@ -11,11 +11,19 @@
   justify-content: space-between;
   gap: var(--productCardOffsetY);
 
+  @include mobile {
+    padding: 16px;
+  }
+
   // .product-card__image
 
   &__image {
     max-height: 250px;
     height: 100%;
+
+    @include mobile {
+      align-self: center;
+    }
   }
 
   // .product-card__header
@@ -62,6 +70,10 @@
 
     line-height: 39px;
     margin-bottom: 8px;
+
+    @include mobile {
+      margin-bottom: 0;
+    }
   }
 
   // .product-card__weight

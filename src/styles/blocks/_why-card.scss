@@ -4,6 +4,10 @@
   align-items: center;
   gap: 24px;
 
+  @include mobile {
+    gap: 12px;
+  }
+
   // .why-card__image
 
   &__image {

@@ -6,6 +6,12 @@
 
   &__list {
     gap: 100px;
+
+    @include mobile {
+      --gridColumns: 1;
+      
+      gap: 30px;
+    }
   }
 
   // .why__item

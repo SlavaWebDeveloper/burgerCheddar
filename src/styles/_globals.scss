@@ -6,6 +6,11 @@ body {
   line-height: 1.5;
   color: var(--color-light);
   background-color: var(--color-dark);
+
+  @include tablet {
+    background-image: url(./images/burgers_bg.png);
+    background-position: center;
+    background-size: contain
 }
 
 a,

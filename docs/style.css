@@ -113,7 +113,7 @@ svg * {
 	--color-product-cards-alt: #757575;
 	--color-gradient-left-to-rigth: linear-gradient(135deg, #da8023 0%, #e2b438 100%);
 	--color-gradient-rigth-to-left: linear-gradient(96deg, #824303 0%, #9e7a19 100%);
-	--border: 1px solid var(--color-dark-gray);
+	--border: 1px solid var(--color-light);
 	--border-radius: 8px;
 	--border-radius-small: 5px;
 	--border-radius-large: 100px;
@@ -187,8 +187,8 @@ h4 {
 }
 
 .section__title {
+	font-size: clamp(30px, 64 / 1440 * 100vw, 64px);
 	text-align: center;
-	font-size: 64px;
 	line-height: 80px;
 	font-weight: 900;
 	letter-spacing: 0.03em;
@@ -322,7 +322,7 @@ h4 {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	padding: 16px 10px;
+	padding: 12px 5px;
 }
 
 .field .error {
@@ -408,6 +408,8 @@ h4 {
 }
 
 .hero__body {
+	position: relative;
+	z-index: 2;
 	max-width: 608px;
 }
 
@@ -577,8 +579,7 @@ h4 {
 .contact-us__form {
 	max-width: 424px;
 	width: 100%;
-	margin-right: 102px;
-	margin-left: auto;
+	margin-inline: auto;
 	border: var(--border);
 	border-radius: calc(var(--border-radius) * 2);
 	padding: 60px 40px;
@@ -675,12 +676,51 @@ h4 {
 
 }
 
+@media (min-width: 1281px) {
+
+.contact-us__form {
+	margin-right: 102px;
+	margin-left: auto;
+}
+
+}
+
 @media (max-width: 1280.98px) {
 
 .header__menu-list {
 	-webkit-column-gap: 60px;
 	   -moz-column-gap: 60px;
 	        column-gap: 60px;
+}
+
+.hero__img {
+	left: calc(100% - 700px);
+}
+
+.contact-us__images {
+	display: none;
+}
+
+.contact-us__form {
+	max-width: 1278px;
+}
+
+}
+
+@media (max-width: 1023.98px) {
+
+body {
+	background-image: url(./images/burgers_bg.png);
+	background-position: center;
+	background-size: auto;
+}
+
+.hero__img {
+	display: none;
+}
+
+.products__list {
+	--gridColumns: 2;
 }
 
 }
@@ -691,10 +731,52 @@ h4 {
 	display: none !important;
 }
 
+.section {
+	--section-padding-y: 90px;
+}
+
+.section__header {
+	margin-bottom: 30px;
+}
+
+.section__title {
+	line-height: 40px;
+}
+
 .header__menu-list {
 	-webkit-column-gap: 20px;
 	   -moz-column-gap: 20px;
 	        column-gap: 20px;
+}
+
+.hero {
+	padding-block: 60px;
+}
+
+.why__list {
+	--gridColumns: 1;
+	gap: 30px;
+}
+
+.why-card {
+	gap: 12px;
+}
+
+.products__list {
+	--gridColumns: 1;
+}
+
+.product-card {
+	padding: 16px;
+}
+
+.product-card__image {
+	-ms-flex-item-align: center;
+	    align-self: center;
+}
+
+.product-card__price {
+	margin-bottom: 0;
 }
 
 }
